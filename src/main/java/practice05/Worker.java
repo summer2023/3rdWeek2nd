@@ -1,22 +1,13 @@
 package practice05;
 
-public class Worker {
-    private int age;
-    private  String name;
+public class Worker extends Person {
 
     public Worker(String name,int age) {
-        this.age=age;
-        this.name=name;
-    }
-    public int getAge(){
-        return this.age;
-    }
-    public String getName(){
-        return this.name;
+        super(name,age);
     }
 
     public String introduce() {
-        String str="My name is "+this.name+". I am "+this.age+" year old.I am a Worker. I have a job";
+        String str=super.introduce()+" I am a Worker. I have a job.";
         return str;
     }
 }

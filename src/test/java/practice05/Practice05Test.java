@@ -45,4 +45,7 @@ public class Practice05Test {
         Worker tom = new Worker("Tom", 21);
         assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Worker. I have a job.");
     }
+
+
+
 }
