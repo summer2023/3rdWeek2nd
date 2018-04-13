@@ -11,11 +11,11 @@ public class Student extends Person{
         return this.Klass;
     }
 
-/*
+
     public String introduce() {
         String s=(Klass!=0)?"Class "+Integer.valueOf(this.Klass)+".":"no Class.";
-        String str=super.introduce()+" I am a Teacher. I teach "+s;
+        String str=super.introduce()+" I am a Student. I am at "+s;
         return str;
     }
-*/
+
 }

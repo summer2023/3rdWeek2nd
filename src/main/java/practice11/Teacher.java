@@ -1,7 +1,6 @@
 package practice11;
 
-import java.util.HashSet;
-import java.util.Vector;
+import java.util.*;
 
 public class Teacher extends Person{
     Klass klass;
@@ -39,8 +38,13 @@ public class Teacher extends Person{
         String str = null;
         if(this.classes!=null){
             StringBuffer sb = new StringBuffer();
-            for (Klass cl:classes) {
-                sb.append(cl.getNumber()).append(", ");
+            List<Integer> mid = new ArrayList<Integer>();
+            for (Klass cl : classes) {
+                mid.add(cl.getNumber());
+            }
+            Collections.sort(mid);
+            for (Integer num:mid) {
+                sb.append(num).append(", ");
             }
             String clnum=sb.toString();
             String tmp ="Class " + clnum.substring(0,clnum.length()-2);

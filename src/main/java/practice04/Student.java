@@ -12,7 +12,7 @@ public class Student extends Person{
     }
 
     public String introduce() {
-        String str=super.introduce()+" I am a Student. I am at Class "+this.Klass+". ";
+        String str=super.introduce()+" I am a Student. I am at Class "+this.Klass+".";
         return str;
     }
 }

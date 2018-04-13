@@ -15,7 +15,8 @@ public class Teacher extends Person{
     }
 
     public String introduce() {
-        String str=super.introduce()+" I am a Teacher. I am at Class "+this.Klass+". ";
+        String tmp=this.Klass!=0?" Class "+this.Klass:" No Class";
+        String str=super.introduce()+" I am a Teacher. I teach"+tmp+".";
         return str;
     }
 }

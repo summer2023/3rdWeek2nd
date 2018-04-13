@@ -16,7 +16,7 @@ public class Person {
     }
 
     public String introduce() {
-        String str="My name is "+this.name+". I am "+this.age+"years old.";
+        String str="My name is "+this.name+". I am "+this.age+" years old.";
         return str;
     }
 }
